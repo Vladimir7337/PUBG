@@ -8,6 +8,7 @@ document.getElementById("sec1").style.display = "block"
 
 document.addEventListener('click', function(event) {
     if (event.target.id === 'btn2') {
+        document.getElementById("alert").style.display = "none"
         document.getElementById('vvod').value = "";
         vyvod.innerHTML = ""
         document.documentElement.style.setProperty("--transfX-1","0px");
@@ -564,7 +565,7 @@ form2.addEventListener('submit', (event) => {
 
     
     if ((rad1 == false) || (rad2 == false) || (rad3 == false) || (rad4 == false) || (rad5 == "") || (rad6 == ""))  {
-        
+        document.getElementById("alert").style.display = "block"
     }
 
     else {
@@ -720,3 +721,8 @@ document.addEventListener('click', function(event) {
     }
 });
 
+document.addEventListener('click', function(event) {
+    if (event.target.id === 'btn-alert') {
+        document.getElementById("alert").style.display = "none"
+    }
+})
