@@ -588,6 +588,7 @@ fieldset {
 /* Alert */
 
 #alert {
+    padding-left: 20px;
     border: 4px solid rgb(255, 169, 0);
     background-color: black;
     border-radius: 20px;
