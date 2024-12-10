@@ -1,0 +1,557 @@
+body {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 254, 254);
+    color: white;
+}
+
+/* Карусель */
+
+:root {
+    --transfX-1: 0px;
+    --transfX-2: 0px;
+}
+
+.wrapper {
+    width: 1503px;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel {
+    transition: 1s;
+    display: flex;
+    /* Перемещение переменной var(--transfX) по горизонатли*/
+    transform: translateX(var(--transfX-1));
+}
+
+.def {
+    overflow: hidden;
+}
+
+.box-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper:hover~.buttons {
+    opacity: 0.1;
+}
+
+
+.slider1 {
+    width: 1503px;
+    background-color: white;
+    color: black;
+}
+
+
+.slider2 {
+    width: 1503px;
+    background-color: black;
+}
+
+.check:invalid {
+    border-color: black;
+}
+
+.check:valid {
+    border-color: black;
+}
+
+/* Шапка сайта */
+
+header {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+
+
+.logo-name {
+    display: flex;
+}
+
+.img-logo {
+    margin-top: 10px;
+}
+
+.name {
+    color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-left: 50px;
+    
+}
+
+.nav1, .nav2, .nav3, .nav4, .nav5 {
+    height: 40px;
+    width: 150px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover {
+    border: 4px solid white;
+    box-shadow: 2px 2px black, 4px 4px rgb(125, 125, 125);
+    top: -4px;
+    left: -4px;
+}
+
+.active {
+    height: 40px;
+    width: 150px;
+    border: 4px solid rgb(255, 196, 0);
+    background-color: rgb(255, 196, 0);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+
+.active:hover {
+    box-shadow: 2px 2px black, 4px 4px rgb(255, 196, 0);
+    top: -4px;
+    left: -4px;
+}
+
+
+#log {
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.box-authorization {
+    margin-left: 30px;
+    display: flex;
+    margin-right: 15px;
+    opacity: 1;
+    border-left: 4px solid  rgb(255, 196, 0);
+    padding-left: 15px;
+}
+
+.exit {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .2s linear;
+    background: rgb(255, 196, 0);
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+.exit:hover {
+    box-shadow: 2px 2px black, 4px 4px rgb(222, 172, 8);
+    top: -4px;
+    left: -4px;
+}
+
+/* Подвал сайта */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.telefon {
+    margin-top: 70px;
+}
+
+.contact-dannie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sotseti {
+    display: flex;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.sot-text {
+    color: white;
+}
+
+.vk, .tg {
+    width: 50px;
+    height: 50px;
+}
+
+.copyright {
+    margin-top: 70px;
+}
+
+/* Секция авторизации */
+
+.section-authorization {
+    width: 500px;
+    height: 600px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+
+.logo {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.h {
+    margin-left: 160px;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-authorization {
+    margin-left: 80px;
+}
+
+.check {
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.valinval:invalid {
+    border-color: red;
+}
+
+.valinval:valid {
+    border-color: green;
+}
+
+.input-authorization {
+    border-radius: 10px;
+    margin-left: 115px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: orange;
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 5px 15px 0 orange;
+    transition: 0.5s;
+  }
+  
+.input-authorization:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 orange;
+}
+
+.label {
+    color: red;
+    font-size: 10px;
+}
+
+/* Секция описание */
+
+.description {
+    height: 880px;
+}
+
+.box1 {
+    width: 1400px;
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 80px;
+    border-radius: 30px;
+}
+
+.box2 {
+    width: 600px;
+    height: 750px;
+    position: relative;
+    bottom: 790px;
+    left: 70px;
+    background-color: white;
+    opacity: 0.2;
+    filter: blur(2px);
+    border-radius: 50px;
+}
+
+.box3 {
+    padding: 30px;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    bottom: 1540px;
+    left: 70px;
+    
+    border-radius: 50px;
+}
+
+.text1, .text2, .text3 {
+    font-size: 25px;
+}
+
+.text1 {
+    background-color: rgb(255, 210, 8);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.text3 {
+    text-align: justify;
+}
+
+/* Линия */
+
+.linia-text {
+    color: rgb(255, 196, 0);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.linia {
+    height: 5px;
+    width: 1400px;
+    margin-left: 50px;
+    background-color: rgb(255, 196, 0);
+}
+
+/* Секция словарь */
+
+
+
+.dict-flex {
+    display: flex;
+    gap: 150px;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+
+.dict-btn {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    box-shadow: 2px 2px black, 4px 4px rgb(125, 125, 125);
+    top: -4px;
+    left: -4px;
+}
+
+.activ {
+    height: 40px;
+    width: 150px;
+    border: 4px solid rgb(255, 196, 0);
+    background-color: rgb(255, 196, 0);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+
+.activ:hover {
+    box-shadow: 2px 2px black, 4px 4px rgb(255, 196, 0);
+    top: -4px;
+    left: -4px;
+}
+
+#vvod {
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#vyvod {
+    border: 4px solid rgb(255, 196, 0);
+    border-radius: 10px;
+    height: 180px;
+    width: 150px;
+}
+
+.text-opis {
+    border: 4px solid rgb(255, 196, 0);
+    width: 500px;
+    height: 270px;
+    background-color: wheat;
+    color: black;
+}
+
+/* Секция галерея */
+
+
+
+.imgslide {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 20px; 
+}
+
+.wrapp {
+    width: 500px;
+    display: flex;
+    overflow: hidden;
+}
+
+.karousel {
+    transition: 1s;
+    display: flex;
+    transform: translateX(var(--transfX-2));
+}
+
+.deff {
+    overflow: hidden;
+    width: 500px;
+}
+
+.box-karousel {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+    margin-left: 450px;
+}
+
+.wrapp:hover~.buttons {
+    opacity: 0.5;
+}
+
+#btnNaz {
+    margin-top: 220px;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    background-color: rgb(255, 196, 0);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#btnPver {
+    margin-top: 220px;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    background-color: rgb(255, 196, 0);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.num-slide {
+    margin-left: 185px;
+}
+
+#dobav-img {
+    margin-left: 725px;
+    background: rgb(255, 196, 0) ;
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+
+/* Секция тест */
+
+#form2 {
+    width: 560px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+#test5, #test6 {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.fx {
+    display: flex;
+    gap: 20px;
+}
+
+#zanovobtn {
+    width: 100px;
+    height: 20px;
+    display: none;
+    background-color:rgb(255, 196, 0);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    margin-left: 560px;
+}
+
+.nachtest {
+    margin-left: 15px;
+    color: rgb(255, 196, 0);
+}
+
+.knops {
+    background-color:rgb(255, 196, 0) ;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+}
+
+#restest {
+    margin-left: 10px;
+}
+
+/* Личный кабинет */
+
+.pol-log {
+    display: flex;
+}
+
+.pol-datroz {
+    display: flex;
+}
+
+.pol-res {
+    display: flex;
+}
+
+#dbv-log {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#dbv-datroz {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#dbv-res {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.pa-margin {
+    margin-left: 610px;
+    margin-top: 40px;
+    border: 4px solid rgb(255, 169, 0);
+    width: 205px;
+    padding: 30px;
+    border-radius: 20px;
+}

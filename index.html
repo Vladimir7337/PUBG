@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="box-carousel">
+        <div class="wrapper">
+            <div class="carousel">
+                <div class="slider1" id="scroll">
+                    <section class="section-authorization">
+                        <div>
+                            <img src="./images/img-authorization.png" class="logo">
+                            <h1 class="h">Авторизация</h1>
+                        </div>
+                        <form class="form-authorization" name="formOne" id="form1" novalidate>
+                            <fieldset class="field">
+                                <legend>Логин</legend>
+                                <input class="check" type="text" name="login" id="login" pattern="^(?=.*[0-9])(?=.*[а-яА-Я])[а-яА-Я0-9]{4,10}$" placeholder="Введите логин" required>
+                                <br>
+                                <label class="label" for="login"></label>
+                                <div id="oshibka1"></div>
+                            </fieldset>
+                            <fieldset class="field">
+                                <legend>Дата рождения</legend>
+                                <input class="check" type="date" name="birth" id="birth" min="1950-01-01" max="2024-12-01" required>
+                                <br>
+                                <label class="label" for="birth"></label>
+                            </fieldset>
+                            <fieldset class="field">
+                                <legend>Пол</legend>
+                                <input type="radio" name="sex" checked="checked" value="Мужской" id="male" required>
+                                <label for="male">Мужской</label>
+                                <input type="radio" name="sex" value="Женский" id="female" required>
+                                <label for="female">Женский</label>
+                            </fieldset>
+                            <input class="input-authorization" type="submit" value="Вперед" id="btn1">
+                        </form>
+                    </section>
+                </div>
+                <div class="slider2">
+                    <header>
+                        <section id="perh" class="zagolovok"></section>
+                            <div class="logo-name">
+                                <img src="./images/logo.png" class="img-logo">
+                                <h1 class="name">BATTLEGROUNDS</h1>
+                            </div>
+                            <nav>
+                                <button id="nav1" class="nav1 active">Описание</button>
+                                <button id="nav2" class="nav2">Словарь</button>
+                                <button id="nav3" class="nav3">Галерея</button>
+                                <button id="nav4" class="nav4">Тест</button>
+                                <button id="nav5" class="nav5">Личный кабинет</button>
+                            </nav>
+                        </section>
+                        <section class="box-authorization">
+                            <div id="log"></div>
+                            <button id="btn2" class="exit">Выйти</button>
+                        </section>
+                    </header>
+                    <main>
+                        <section class="description" id="sec1">
+                            <img class="box1" src="./images/img-opisanie.jpeg">
+                            <div class="box2">
+                            </div>
+                            <div class="box3">
+                                <h1 class="text1" id="iak1">Описание</h1>
+                                <h1 class="text2">PUBG BATTLEGROUNDS</h1>
+                                <p class="text3">
+                                    PUBG BATTLEGROUNDS — королевская битва,
+                                    разработанная компанией PUBG Corporation.
+                                    Игроки сражаются друг с другом на большом
+                                     острове, где цель — остаться единственным
+                                    выжившим из 100 участников. Игра предлагает
+                                    реалистичную графику и разнообразные карты.
+                                    Игроки могут использовать различные тактики,
+                                    собирать оружие и броню, а также управлять 
+                                    транспортными средствами. Постепенно сужающаяся
+                                    зона заставляет участников двигаться, создавая 
+                                    напряженные ситуации. PUBG стал одной из первых 
+                                    игр в жанре королевской битвы и завоевал большую 
+                                    популярность среди геймеров.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="dict" id="sec2">
+                            <h1 class="linia-text" id="iak2">Словарь</h1>
+                            <div class="linia"></div>
+                            <div class="dict-flex">
+                                <div class="dict-btns">
+                                    <button class="dict-btn" id="dict-btn1">M16A4</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn2">M416</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn3">SCAR-L</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn4">G36C</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn5">QBZ</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn6">AUG</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn7">FAMAS</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn8">AKM</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn9">Beryl M762</button>
+                                    <br><br>
+                                    <button class="dict-btn" id="dict-btn10">Mk47 Mutant</button>
+                                </div>
+                                <div class="dict-polia">
+                                    <form id="form-slovar">
+                                        <input type="text" id="vvod" placeholder="Поиск">
+                                        <ul id="vyvod"></ul>
+                                        <h1>Текстовое описание</h1>
+                                        <div class="text-opis">
+                                            <div id="dict-dobav1"></div>
+                                            <div id="dict-dobav2"></div>
+                                            <div id="dict-dobav3"></div>
+                                            <div id="dict-dobav4"></div>
+                                            <div id="dict-dobav5"></div>
+                                            <div id="dict-dobav6"></div>
+                                            <div id="dict-dobav7"></div>
+                                            <div id="dict-dobav8"></div>
+                                            <div id="dict-dobav9"></div>
+                                            <div id="dict-dobav10"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="gallery" id="sec3">
+                            <h1 class="linia-text" id="iak3">Галерея</h1>
+                            <div class="linia"></div>
+                            <div class="box-karousel">
+                                <div>
+                                    <button id="btnNaz"><</button>
+                                </div>
+                                <div class="wrapp">
+                                    <div class="karousel">
+                                        <div class="deff"><img class="imgslide" src="./images/1.jpg" alt="1"><p class="num-slide">1 слайд из 5</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/2.webp" alt="2"><p class="num-slide">2 слайд из 5</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/3.webp" alt="3"><p class="num-slide">3 слайд из 5</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/4.jpg" alt="4"><p class="num-slide">4 слайд из 5</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/5.jpg" alt="5"><p class="num-slide">5 слайд из 5</p></div>
+                                    </div> 
+                                </div>
+                                <div>
+                                    <button id="btnPver">></button>
+                                </div>
+                            </div>
+                            <div id="dobav-img"></div> 
+                        </section>
+                        <section class="test" id="sec4">
+                            <h1 class="linia-text" id="iak4">Тест</h1>
+                            <div class="linia"></div>
+                            <form name="formTwo" id="form2" novalidate>
+                                <p class="nachtest">Тест по игре "PUBG MOBILE"</p>
+                                <br>
+                                <fieldset id="fieldset1">
+                                    <legend>Какая карта в Пабге вышла второй?</legend>
+                                    <input type="radio" name="butt1" id="vopros1" value="z1">
+                                    <label for="vopros1">Викенди</label>
+                                    <input type="radio" name="butt1" id="vopros2" value="z2">
+                                    <label for="vopros2">Эрангель</label>
+                                    <input type="radio" name="butt1" id="vopros3" value="z3">
+                                    <label for="vopros3">Мирамар</label>
+                                    <input type="radio" name="butt1" id="vopros4" value="z4">
+                                    <label for="vopros4">Каракен</label>
+                                    <div class="fx">
+                                        <div id="dbv1"></div>
+                                        <div id="vern1"></div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <fieldset id="fieldset2">
+                                    <legend>Какое оружие ближнего боя самое сильное в пабг?</legend>
+                                    <input type="radio" name="butt2" id="vopros5" value="z5">
+                                    <label for="vopros5">Серп</label>
+                                    <input type="radio" name="butt2" id="vopros6" value="z6">
+                                    <label for="vopros6">Сковорода</label>
+                                    <input type="radio" name="butt2" id="vopros7" value="z7">
+                                    <label for="vopros7">Мачете</label>
+                                    <input type="radio" name="butt2" id="vopros8" value="z8">
+                                    <label for="vopros8">Лом</label>
+                                    <div class="fx">
+                                        <div id="dbv2"></div>
+                                        <div id="vern2"></div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <fieldset id="fieldset3">
+                                    <legend>У какой снайперской винтовки в PUBG самый большой урон?</legend>
+                                    <input type="radio" name="butt3" id="vopros9" value="z9">
+                                    <label for="vopros9">KAR98K</label>
+                                    <input type="radio" name="butt3" id="vopros10" value="z10">
+                                    <label for="vopros10">AKM</label>
+                                    <input type="radio" name="butt3" id="vopros11" value="z11">
+                                    <label for="vopros11">M24</label>
+                                    <input type="radio" name="butt3" id="vopros12" value="z12">
+                                    <label for="vopros12">AVM</label>
+                                    <div class="fx">
+                                        <div id="dbv3"></div>
+                                        <div id="vern3"></div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <fieldset id="fieldset4">
+                                    <legend>У какого дробовика самый большой урон в PUBG?</legend>
+                                    <input type="radio" name="butt4" id="vopros13" value="z13">
+                                    <label for="vopros13">DBS</label>
+                                    <input type="radio" name="butt4" id="vopros14" value="z14">
+                                    <label for="vopros14">S1897</label>
+                                    <input type="radio" name="butt4" id="vopros15" value="z15">
+                                    <label for="vopros15">SK-12</label>
+                                    <input type="radio" name="butt4" id="vopros16" value="z16">
+                                    <label for="vopros16">Vector</label>
+                                    <div class="fx">
+                                        <div id="dbv4"></div>
+                                        <div id="vern4"></div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <fieldset id="fieldset5">
+                                    <legend>Введите максимальное количество игроков в класиическом бою на Эрангеле</legend>
+                                    <input type="number" id="test5" placeholder="Введите число" min="100" max="100" step="1" name="test5">
+                                    <div class="fx">
+                                        <div id="dbv5"></div>
+                                        <div id="vern5"></div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="fieldset6">
+                                    <legend>Сколько персонажей в игре?</legend>
+                                    <input type="number" id="test6" placeholder="Введите число" min="4" max="4" step="1" name="test6">
+                                    <div class="fx">
+                                        <div id="dbv6"></div>
+                                        <div id="vern6"></div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <input class="knops" type="submit" value="Проверить" id="btn3">
+                                <br><br>
+                                <div id="restest"></div>
+                                <br>
+                                
+                            </form>
+                            <button id="zanovobtn">Заново</button>
+                        </section>
+                        <section class="personal-account" id="sec5">
+                            <h1 class="linia-text" id="iak5">Личный кабинет</h1>
+                            <div class="linia"></div>
+                            <div class="pa-margin">
+                                <div class="pol-log">
+                                    <p class="pa-a">Логин: </p>
+                                    <div id="dbv-log"></div>
+                                </div>
+                                <div class="pol-datroz">
+                                    <p class="pa-a">Дата рождения: </p>
+                                    <div id="dbv-datroz"></div>
+                                </div>
+                                <div class="pol-res">
+                                    <p class="pa-a">Результат: </p>
+                                    <div id="dbv-res"></div>
+                                </div>
+                                <button id="btn2" class="exit">Выйти</button>
+                            </div>
+                        </section>
+                    </main>
+                    <br>
+                    <footer>
+                        <section class="contact-dannie">
+                            <div class="telefon">Телефон: +7 800 555-33-55</div>
+                            <div class="sotseti">
+                                <p class="sot-text">Соцсети:</p>
+                                <a href="#"><img src="./images/vk.png" class="vk"></a>
+                                <a href="#"><img src="./images/telegram.png" class="tg"></a>
+                            </div>
+                            <div class="copyright">@2024 Ваша Компания. Все права защищены.</div>
+                        </section>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
