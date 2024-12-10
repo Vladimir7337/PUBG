@@ -167,7 +167,7 @@ nav {
 footer {
     background-color: black;
     color: white;
-    height: 200px;
+    height: 250px;
 }
 
 .telefon {
@@ -176,7 +176,8 @@ footer {
 
 .contact-dannie {
     display: flex;
-    justify-content: space-around;
+    margin-left: 350px;
+    gap: 400px;
     align-items: center;
 }
 
@@ -196,7 +197,8 @@ footer {
 }
 
 .copyright {
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-left: 580px;
 }
 
 /* Секция авторизации */
@@ -454,9 +456,26 @@ fieldset {
     border-radius: 10px;
 }
 
-.num-slide {
+.num-slide1 {
+    margin-left: 196px;
+}
+
+.num-slide2 {
+    margin-left: 182px;
+}
+
+.num-slide3 {
+    margin-left: 202px;
+}
+
+.num-slide4 {
+    margin-left: 200px;
+}
+
+.num-slide5 {
     margin-left: 185px;
 }
+
 
 #dobav-img {
     margin-left: 725px;
@@ -529,6 +548,10 @@ fieldset {
     display: flex;
 }
 
+.pol-pol {
+    display: flex;
+}
+
 #dbv-log {
     height: 15px;
     margin-top: 15px;
@@ -541,6 +564,12 @@ fieldset {
     margin-left: 10px;
 }
 
+#dbv-pol {
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
 #dbv-res {
     height: 15px;
     margin-top: 15px;
@@ -548,10 +577,10 @@ fieldset {
 }
 
 .pa-margin {
-    margin-left: 610px;
+    margin-left: 570px;
     margin-top: 40px;
     border: 4px solid rgb(255, 169, 0);
-    width: 205px;
+    width: 300px;
     padding: 30px;
     border-radius: 20px;
 }

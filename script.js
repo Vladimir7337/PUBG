@@ -8,7 +8,7 @@ document.getElementById("sec1").style.display = "block"
 
 document.addEventListener('click', function(event) {
     if (event.target.id === 'btn2') {
-        document.getElementById("form-slovar").reset()
+        document.getElementById('vvod').value = "";
         vyvod.innerHTML = ""
         document.documentElement.style.setProperty("--transfX-1","0px");
         document.getElementsByTagName("body")[0].style.backgroundColor = 'white'
@@ -123,6 +123,7 @@ form.addEventListener('submit', (event) => {
         document.getElementById("log").innerText = "Логин: " + form.login.value
         document.getElementById("dbv-log").innerText = form.login.value
         document.getElementById("dbv-datroz").innerText = form.birth.value
+        document.getElementById("dbv-pol").innerText = form.sex.value
     }
     
 
@@ -563,7 +564,7 @@ form2.addEventListener('submit', (event) => {
 
     
     if ((rad1 == false) || (rad2 == false) || (rad3 == false) || (rad4 == false) || (rad5 == "") || (rad6 == ""))  {
-        alert("Введите все поля")
+        
     }
 
     else {

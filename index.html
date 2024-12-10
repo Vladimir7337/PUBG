@@ -20,14 +20,14 @@
                         <form class="form-authorization" name="formOne" id="form1" novalidate>
                             <fieldset class="field">
                                 <legend>Логин</legend>
-                                <input class="check" type="text" name="login" id="login" pattern="^(?=.*[0-9])(?=.*[а-яА-Я])[а-яА-Я0-9]{4,10}$" placeholder="Введите логин" required>
+                                <input title="Логин должен состоять из символов русского алфавита и цифр, иметь количество символов от 4 до 10" class="check" type="text" name="login" id="login" pattern="^(?=.*[0-9])(?=.*[а-яА-Я])[а-яА-Я0-9]{4,10}$" placeholder="Введите логин" required>
                                 <br>
                                 <label class="label" for="login"></label>
                                 <div id="oshibka1"></div>
                             </fieldset>
                             <fieldset class="field">
                                 <legend>Дата рождения</legend>
-                                <input class="check" type="date" name="birth" id="birth" min="1950-01-01" max="2024-12-01" required>
+                                <input title="Дата рождения может быть не раньше 1950 года и не позже дня создания формы" class="check" type="date" name="birth" id="birth" min="1950-01-01" max="2024-12-01" required>
                                 <br>
                                 <label class="label" for="birth"></label>
                             </fieldset>
@@ -113,23 +113,21 @@
                                     <button class="dict-btn" id="dict-btn10">Mk47 Mutant</button>
                                 </div>
                                 <div class="dict-polia">
-                                    <form id="form-slovar">
-                                        <input type="text" id="vvod" placeholder="Поиск">
-                                        <ul id="vyvod"></ul>
-                                        <h1>Текстовое описание</h1>
-                                        <div class="text-opis">
-                                            <div id="dict-dobav1"></div>
-                                            <div id="dict-dobav2"></div>
-                                            <div id="dict-dobav3"></div>
-                                            <div id="dict-dobav4"></div>
-                                            <div id="dict-dobav5"></div>
-                                            <div id="dict-dobav6"></div>
-                                            <div id="dict-dobav7"></div>
-                                            <div id="dict-dobav8"></div>
-                                            <div id="dict-dobav9"></div>
-                                            <div id="dict-dobav10"></div>
-                                        </div>
-                                    </form>
+                                    <input type="text" id="vvod" placeholder="Поиск">
+                                    <ul id="vyvod"></ul>
+                                    <h1>Текстовое описание</h1>
+                                    <div class="text-opis">
+                                        <div id="dict-dobav1"></div>
+                                        <div id="dict-dobav2"></div>
+                                        <div id="dict-dobav3"></div>
+                                        <div id="dict-dobav4"></div>
+                                        <div id="dict-dobav5"></div>
+                                        <div id="dict-dobav6"></div>
+                                        <div id="dict-dobav7"></div>
+                                        <div id="dict-dobav8"></div>
+                                        <div id="dict-dobav9"></div>
+                                        <div id="dict-dobav10"></div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -142,11 +140,11 @@
                                 </div>
                                 <div class="wrapp">
                                     <div class="karousel">
-                                        <div class="deff"><img class="imgslide" src="./images/1.jpg" alt="1"><p class="num-slide">1 слайд из 5</p></div>
-                                        <div class="deff"><img class="imgslide" src="./images/2.webp" alt="2"><p class="num-slide">2 слайд из 5</p></div>
-                                        <div class="deff"><img class="imgslide" src="./images/3.webp" alt="3"><p class="num-slide">3 слайд из 5</p></div>
-                                        <div class="deff"><img class="imgslide" src="./images/4.jpg" alt="4"><p class="num-slide">4 слайд из 5</p></div>
-                                        <div class="deff"><img class="imgslide" src="./images/5.jpg" alt="5"><p class="num-slide">5 слайд из 5</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/1.jpg" alt="1"><p class="num-slide1">Аватарка</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/2.webp" alt="2"><p class="num-slide2">Изображение</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/3.webp" alt="3"><p class="num-slide3">Иконка</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/4.jpg" alt="4"><p class="num-slide4">Графити</p></div>
+                                        <div class="deff"><img class="imgslide" src="./images/5.jpg" alt="5"><p class="num-slide5">Фотография</p></div>
                                     </div> 
                                 </div>
                                 <div>
@@ -262,8 +260,12 @@
                                     <p class="pa-a">Дата рождения: </p>
                                     <div id="dbv-datroz"></div>
                                 </div>
+                                <div class="pol-pol">
+                                    <p class="pa-a">Пол: </p>
+                                    <div id="dbv-pol"></div>
+                                </div>
                                 <div class="pol-res">
-                                    <p class="pa-a">Результат: </p>
+                                    <p class="pa-a">Результат теста: </p>
                                     <div id="dbv-res"></div>
                                 </div>
                                 <button id="btn2" class="exit">Выйти</button>
@@ -279,8 +281,8 @@
                                 <a href="#"><img src="./images/vk.png" class="vk"></a>
                                 <a href="#"><img src="./images/telegram.png" class="tg"></a>
                             </div>
-                            <div class="copyright">@2024 Ваша Компания. Все права защищены.</div>
                         </section>
+                        <div class="copyright">@2024 Ваша Компания. Все права защищены.</div>
                     </footer>
                 </div>
             </div>
